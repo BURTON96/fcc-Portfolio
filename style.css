@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-li, a {
+li, a, button {
     font-size: 16px;
     color: #24252A;
     text-decoration: none;
@@ -33,5 +33,84 @@ header {
 .nav__links, li, a:hover{
     color: red;
 }
+.menu{
+  display: none;
+}
+button {
+  padding: 9px 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover{
+  background-color: white;
+  color: red;
+}
+/* Mobile Nav*/
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
 
-
+.overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.overlay a:hover, .overlay a:focus{
+  color: red;  
+}
+.overlay, .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.menu, .close{
+  font-size:50px;
+}
+#welcome-section{
+  dsiplay: grid;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.welcome-text{
+  place-self: center;
+  font-size: 50px;
+}
+@media only screen and (max-width: 800px){
+    .desktop-nav{
+    display: none;
+  }
+  .menu{
+    display: inherit;
+  }
+}
+@media screen and (max-height: 450px){
+  .overlay a{
+    font-size: 20px;
+  }
+  .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
