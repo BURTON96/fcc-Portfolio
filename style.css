@@ -86,6 +86,7 @@ button:hover{
 .menu, .close{
   font-size:50px;
 }
+/* End of mobile nav*/
 #welcome-section{
   dsiplay: grid;
   height: 100vh;
