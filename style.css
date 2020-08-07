@@ -1,120 +1,184 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section{
+min-width: 320px;
+}
+h1, h2, p {
+margin-left: 50px;
 }
 li, a, button {
-    font-size: 16px;
-    color: #24252A;
-    text-decoration: none;
+  font-size: 20px;
+  color: #24252A;
+  text-decoration: none;
 }
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
 }
 .logo {
-    margin-right: auto;
-    cursor: pointer; 
+  margin-right: auto;
+  cursor: pointer; 
 }
 .nav__links {
-    list-style: none;
+  list-style: none;
 }
 .nav__links, li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 .nav__links, li, a{
-    transition: all 0.3s ease 0s;
-}
-.nav__links, li, a:hover{
-    color: red;
-}
-.menu{
-  display: none;
-}
-button {
-  padding: 9px 25px;
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover{
-  background-color: white;
+.nav__links, li, a:hover{
   color: red;
+}
+.menu{
+display: none;
+}
+button {
+padding: 9px 25px;
+background-color: red;
+color: white;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+button:hover{
+background-color: white;
+color: red;
 }
 /* Mobile Nav*/
 .overlay{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: all 0.5s ease 0s;
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+background-color: white;
+overflow-x: hidden;
+transition: all 0.5s ease 0s;
 }
 
 .overlay-content{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+display: flex;
+height: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 .overlay a{
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: all 0.3s ease 0s;
+padding: 15px;
+font-size: 36px;
+display: block;
+transition: all 0.3s ease 0s;
 }
 .overlay a:hover, .overlay a:focus{
-  color: red;  
+color: red;  
 }
 .overlay, .close{
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
 }
 .menu, .close{
-  font-size:50px;
+font-size:50px;
 }
 /* End of mobile nav*/
 #welcome-section{
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 .welcome-text{
-    font-size: 50px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#about{
+padding: 50px 0px 50px 0px;
+height: 100%;
+width: 100%;
+}
+#projects{
+position: relative;
+padding: 50px 0px 50px 0px;
+height: 100vh;
+width: 100%;
+background-color: black;
+color: white;
+}
+section p{
+font-size: 25px;
+font-weight: 100;
+}
+section h1{
+padding: 20px 0px 20px 0px;
+font-weight: 300;
+font-size: 35px;
+}
+#find-out{
+margin: 50px 0px 10px 50px;
+font-size: 20px;
+}
+#projects #find-out{
+color: white;
+position: absolute;
+bottom: 50px;
+transition: all 0.3s ease 0s;
+}
+#projects #find-out:hover{
+color: red;
+}
+.project-display{
+display: flex;
+width: 85vw;
+height: 100%;
+text-align: center;
+}
+.project-tile{
+height: 500px;
+width: 40%;
+background-color: white;
+margin: 50px;
+}
+.project-listing{
+margin: 50px;
+width: 40%;
+text-align: left;
 }
 @media only screen and (max-width: 800px){
-    .desktop-nav{
-    display: none;
-  }
-  .menu{
-    display: inherit;
-  }
+  .desktop-nav{
+  display: none;
+}
+.menu{
+  display: inherit;
+}
+.project-tile{
+  display: none;
+}
+.project-listing{
+  width: 100%;
+}
 }
 @media screen and (max-height: 450px){
-  .overlay a{
-    font-size: 20px;
-  }
-  .overlay .close{
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+.overlay a{
+  font-size: 20px;
+}
+.overlay .close{
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
 }
