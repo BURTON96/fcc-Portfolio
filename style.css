@@ -25,6 +25,8 @@ header {
 .logo {
   margin-right: auto;
   cursor: pointer; 
+  width: 30px;
+  height: 100%;
 }
 .nav__links {
   list-style: none;
