@@ -147,6 +147,12 @@ color: red;
   display: inline-block;
   zoom: 1;
 }
+.project-header{
+color: red;
+}
+footer{
+  display: flex;
+}
 @media only screen and (max-width: 800px){
   .desktop-nav{
   display: none;
