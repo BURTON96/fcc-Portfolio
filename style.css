@@ -42,18 +42,7 @@ header {
 .menu{
 display: none;
 }
-button {
-padding: 9px 25px;
-background-color: red;
-color: white;
-border: none;
-cursor: pointer;
-transition: all 0.3s ease 0s;
-}
-button:hover{
-background-color: white;
-color: red;
-}
+
 /* Mobile Nav*/
 .overlay{
 height: 100%;
@@ -112,9 +101,8 @@ height: 100%;
 width: 100%;
 }
 #projects{
-position: relative;
 padding: 50px 0px 50px 0px;
-height: 100vh;
+height: 100%;
 width: 100%;
 background-color: black;
 color: white;
@@ -129,12 +117,12 @@ font-weight: 300;
 font-size: 35px;
 }
 #find-out{
+  position: static;
 margin: 50px 0px 10px 50px;
 font-size: 20px;
 }
 #projects #find-out{
 color: white;
-position: absolute;
 bottom: 50px;
 transition: all 0.3s ease 0s;
 }
@@ -142,21 +130,22 @@ transition: all 0.3s ease 0s;
 color: red;
 }
 .project-display{
-display: flex;
-width: 85vw;
-height: 100%;
-text-align: center;
+  width:100vw;
+  height:480px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x:scroll;
+  overflow-y:hidden;
 }
-.project-tile{
-height: 500px;
-width: 40%;
-background-color: white;
-margin: 50px;
-}
-.project-listing{
-margin: 50px;
-width: 40%;
-text-align: left;
+
+.project-display div{
+  width: 320px;
+  background-color: #eee;
+  float: none;
+  height: 90%;
+  margin: 50px;
+  display: inline-block;
+  zoom: 1;
 }
 @media only screen and (max-width: 800px){
   .desktop-nav{
@@ -165,12 +154,7 @@ text-align: left;
 .menu{
   display: inherit;
 }
-.project-tile{
-  display: none;
-}
-.project-listing{
-  width: 100%;
-}
+
 }
 @media screen and (max-height: 450px){
 .overlay a{
