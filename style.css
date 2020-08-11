@@ -155,6 +155,16 @@ color: red;
 footer{
   display: flex;
 }
+footer section{
+  width: 30%;
+}
+form{
+  
+}
+input{
+  margin: 10px 0px 0px 50px;
+  width: 250px;
+}
 @media only screen and (max-width: 800px){
   .desktop-nav{
   display: none;
