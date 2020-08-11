@@ -156,12 +156,16 @@ footer{
   display: flex;
 }
 footer section{
-  width: 30%;
+  width: 25%;
   padding-bottom: 25px;
 }
 input{
   margin: 10px 0px 0px 50px;
   width: 250px;
+}
+footer img{
+  width: 25px;
+  height: 100%;
 }
 @media only screen and (max-width: 800px){
   .desktop-nav{
@@ -176,11 +180,9 @@ footer{
 .menu{
   display: inherit;
 }
-#contact, #subscribe, #FAQ{
-  position: static;
+section{
   width: 100vw;
 } 
-
 
 }
 @media screen and (max-height: 450px){
