@@ -157,9 +157,7 @@ footer{
 }
 footer section{
   width: 30%;
-}
-form{
-  
+  padding-bottom: 25px;
 }
 input{
   margin: 10px 0px 0px 50px;
@@ -169,9 +167,20 @@ input{
   .desktop-nav{
   display: none;
 }
+h1, h2, p , input{
+  margin-left: 15px;
+  }
+footer{
+  display: inline-block;
+}
 .menu{
   display: inherit;
 }
+#contact, #subscribe, #FAQ{
+  position: static;
+  width: 100vw;
+} 
+
 
 }
 @media screen and (max-height: 450px){
