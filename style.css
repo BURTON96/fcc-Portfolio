@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 section{
 min-width: 320px;
@@ -22,11 +23,17 @@ header {
   align-items: center;
   padding: 30px 10%;
 }
+nav{
+  position: fixed;
+  top: 0;
+  padding-top: 30px;
+}
 .logo {
   margin-right: auto;
   cursor: pointer; 
   width: 30px;
   height: 100%;
+  
 }
 .nav__links {
   list-style: none;
